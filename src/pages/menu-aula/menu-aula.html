@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>        
+        <div padding   style="width: 100%; padding: 0px; text-align:right;">
+         <button ion-button  icon-right outline   (click)="EntrarChat()">
+             Ingresar
+           <ion-icon name="ios-chatbubbles-outline"></ion-icon>
+         </button>    
+        </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="tamano" padding>
+Seleccione la sala a la que desea entrar:
+<br><br><br><br><br><br><br><br>
+<ion-list>
+  <ion-item>
+    <ion-label class="tamano">AULA</ion-label>
+    <ion-select [(ngModel)]="tipoUser">
+      <ion-option value="4A">4A</ion-option>
+      <ion-option value="4B">4B</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+<body> 
+  </body> 

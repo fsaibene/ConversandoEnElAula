@@ -6,13 +6,11 @@
 <ion-content scroll="false" style="background-image: url('assets/images/fondo.jpg')">
   <div padding id="cloud-layer">
 
-    <div style="width:50%; margin: 0 auto">
+    <div style="width:70%; margin: 0 auto">
       <ion-row>
-        <ion-col>
-          <img style="margin: 0 auto;" src="assets/images/icon.png" />
-        </ion-col>
+        <img style="width: 50px; height:50px; margin: 0 auto;" src="assets/images/icon.png" />
       </ion-row>
-      <h4 style="width: 100%; margin: 0 auto;"><strong>Conversando En El Aula</strong></h4>
+      <h4 style="width: 100%; margin: 0 auto; text-align:center;"><strong>Conversando en el aula</strong></h4>
     </div>
     <ion-row>
       <ion-col>
@@ -48,17 +46,16 @@
     <ion-row>
       <ion-col>
         <div style= "width:12em; margin: 0 auto">
-          <button ion-button style="width:100%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold; background-color: grey" class="login-button" (click)="login(user)" [disabled]="isInvalid()" >Ingresar</button>
+          <button ion-button style="width:100%; margin: 0 auto; border-radius: 25px; color:black; background-color: green; font-weight: bold" class="login-button" (click)="login(user)" [disabled]="isInvalid()" >Ingresar</button>
         </div>
       </ion-col>
     </ion-row>
     <ion-row>
         <ion-col>
           <div style= "width:12em; margin: 0 auto">
-            <button ion-button style="width:100%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold; background-color: grey" class="login-button" (click)="register()" >Registrarse</button>
+            <button ion-button style="width:100%; margin: 0 auto; border-radius: 25px; color:black; background-color: green;  font-weight: bold" class="login-button" (click)="register()" >Registrarse</button>
           </div>
         </ion-col>
       </ion-row>
-
   </div>
 </ion-content>

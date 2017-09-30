@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Conversando en el aula</ion-title>
+      <label style="color: red; background-color: grey;" (click)="backToHome()"></label>
+    <ion-buttons end>
+      <label style="color: red; background-color: grey;" (click)="logout()"><ion-icon name="power"></ion-icon></label>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let item of list | async">
+         {{item.usuario}}:
+          {{item.mensaje}}
+        </ion-item>
+      </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+  <table border="0">
+    <tr>
+      <td><div class="input-group">
+        <span class="input-group-addon">></span>
+        <input id="msg" [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escriba su mensaje aqui...">
+      </div></td>
+      <td><button ion-button  icon-right outline (click)="Push()">Enviar<ion-icon name="ios-send"></ion-icon></button></td>
+    </tr>
+</table>
+
+  </ion-toolbar>
+</ion-footer>

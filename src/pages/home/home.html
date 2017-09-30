@@ -1,22 +1,29 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar color="dark">
+    <ion-title>Conversando en el aula</ion-title>
+    <ion-buttons end>
+      <button ion-button style="color: red; background-color: grey;" (click)="logout()"><ion-icon name="power"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-
-  <div style="width:800px; margin:0 auto;">
-    <button ion-button (click)="logout()">Logout</button>
-  </div>
-
+<ion-content padding style="background-image: url('assets/images/fondo2.jpg')">
+  Seleccione curso:
+  <br><br><br><br><br><br><br><br>
+  <ion-list>
+    <ion-item>
+      <ion-label >Elegir aula</ion-label>
+      <ion-select [(ngModel)]="aula" >
+        <ion-option value="4A">4A</ion-option>
+        <ion-option value="4B">4B</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-row>
+    <ion-col>
+      <div style= "width:12em; margin: 0 auto">
+        <button ion-button style="width:100%; margin: 0 auto; border-radius: 25px; color:black; background-color: green;  font-weight: bold" (click)="EntrarChat()" >Entrar a la sala</button>
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-content>

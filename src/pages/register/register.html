@@ -5,12 +5,12 @@
 </ion-header>
 <ion-content scroll="false" style="background-image: url('assets/images/fondo.jpg')">
   <div style="width:50%; margin: 0 auto">
-    <ion-row>
-      <ion-col>
-        <img style="margin: 0 auto;" src="assets/images/icon.png" />
-      </ion-col>
-    </ion-row>
-    <h4 style="width: 100%; margin: 0 auto;"><strong>Conversando En El Aula</strong></h4>
+    <div style="width:70%; margin: 0 auto">
+      <ion-row>
+        <img style="width: 50px; height:50px; margin: 0 auto;" src="assets/images/icon.png" />
+      </ion-row>
+      <h4 style="width: 100%; margin: 0 auto; text-align:center;"><strong>Conversando en el aula</strong></h4>
+    </div>
   </div>
   <div style="width: 80%; margin: 0 auto;">
     <ion-label class="myLabel">Email</ion-label>
@@ -31,6 +31,6 @@
   <br>
   <br>
   <div style="width:80%; margin:0 auto;">
-    <button style="width:100%; margin:0 auto; border-radius: 25px" ion-button (click)="register(user, passRepetido)">Registrarse</button>
+    <button style="width:100%; margin:0 auto; border-radius: 25px; background-color: green;" ion-button (click)="register(user, passRepetido)">Registrarse</button>
   </div>
 </ion-content>
