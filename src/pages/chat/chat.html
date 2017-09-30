@@ -8,8 +8,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-    <ion-list>
+<ion-content style="background-image: url('assets/images/fondo.jpg')">
+  <ion-list>
         <ion-item *ngFor="let item of list | async">
          {{item.usuario}}:
           {{item.mensaje}}
@@ -22,9 +22,9 @@
     <tr>
       <td><div class="input-group">
         <span class="input-group-addon">></span>
-        <input id="msg" [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escriba su mensaje aqui...">
+        <input id="msg" [(ngModel)]="chatBox" type="text" class="form-control" name="msg" placeholder="Escribir mensaje">
       </div></td>
-      <td><button ion-button  icon-right outline (click)="Push()">Enviar<ion-icon name="ios-send"></ion-icon></button></td>
+      <label style="color: green; background-color: grey;" (click)="Push()"><ion-icon name="md-send"></ion-icon></label>
     </tr>
 </table>
 
